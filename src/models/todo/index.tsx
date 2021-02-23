@@ -11,6 +11,8 @@ export const createTodo = todoDomain.createEvent<Todo>();
 
 export const changeTodoInput = todoDomain.createEvent<TodoInput>();
 
+export const logNewTodoFx = todoDomain.createEffect<Todo, void, Error>();
+
 export const reset = todoDomain.createEvent();
 
 export const resetInput = todoDomain.createEvent();
